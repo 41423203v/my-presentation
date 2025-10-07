@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <title>Reveal.js 簡報範例</title>
+
+  <!-- 1. 引入 Reveal.js 樣式與主題 -->
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/theme/black.css" id="theme">
+
+  <style>
+    /* 自訂樣式（可選） */
+    .reveal h1, .reveal h2 {
+      color: #00ffff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 2. 簡報內容區塊 -->
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- 第 1 張 -->
+      <section>
+        <h1>計算機概論-嚴家銘</h1>
+        <p>組員:2、3、8、40、46、51</p>
+      </section>
+
+      <!-- 第 2 張 -->
+      <section>
+        <section>
+          <h2>Q1-1:git介紹?</h2>
+          <p>存檔⾄git倉庫然後會有記錄可以查看歷史，⽤於追蹤檔案的變化，尤其是原始碼的版本控制。它允許多個開發者在不同的機器上並⾏⼯作，並且可以合併修改。</p>
+        </section>
+        <section>
+          <h2>操作步驟:</h2>
+         <ul>
+         <li class="fragment">安裝git</li>
+          <li class="fragment">設定使⽤者資訊</li>
+          <li class="fragment">查看專案狀態(會顯⽰檔案有沒有被追蹤、是否修改過。)</li>
+          <li class="fragment">將檔案加⼊暫存區</li>
+          <li class="fragment">提交</li>
+          <li class="fragment">推送到遠端</li>
+          <li class="fragment">從遠端抓下來、可查看提交歷史(需要使⽤的時候，就可以從雲端抓下。)</li>
+         </ul>
+        </section>
+      </section>
+
+      <!-- 第 3 張 -->
+      <section>
+        <section>
+          <h2>Q1-2:GitHub介紹?</h2>
+          <p>是⼀個，雲端平台，幫你把⽤Git管理的專案放到網路上。優點:備份、協作(可多⼈開發)、分享(分享你的專案讓其他⼈學習)，結論:GitHub=程式碼的雲端儲存+合作平台。</p>
+        </section>
+        <section>
+          <h2>操作步驟:</h2>
+         <ul>
+         <li class="fragment">要先註冊⼀個GitHub帳號</li>
+          <li class="fragment">連接GitHub與本地Git</li>
+          <li class="fragment">把程式碼推到GitHub</li>
+         </ul>
+        </section>
+      </section>
+
+      <!-- 第 4 張 -->
+      <section>
+        <section>
+          <h2>Q1-3：cmsimde介紹？</h2>
+          <p>是⼀個基於phthon的簡易內容管理系統，建檔然後存到GitHub就會⾃動成網站</p>
+        </section>
+        <section>
+          <h2>操作步驟:</h2>
+         <ul>
+         <li class="fragment">⽣成靜態網站</li>
+          <li class="fragment">儲存上傳</li>
+         </ul>
+        </section>
+      </section>
+
+      <!-- 第 5 張 -->
+      <section>
+        <section>
+          <h2>Q1-4：gist介紹？</h2>
+          <p>Gist是GitHub提供的⼀個功能，讓你快速分享程式碼⽚段、筆記或⽂件，本質上就是⼀個⼩型的Git儲存庫，所以也有版本控制功能。</p>
+        </section>
+        <section>
+          <h2>操作步驟:</h2>
+         <ul>
+         <li class="fragment">建⽴新的Gist</li>
+          <li class="fragment">分享連結</li>
+         </ul>
+        </section>
+      </section>
+
+      <!-- 第 6 張 -->
+       <section>
+        <h1>報告到此結束</h1>
+      </section>
+    </div>
+  </div>
+
+  <!-- 3. 載入 Reveal.js 本體與初始化 -->
+  <script src="https://unpkg.com/reveal.js/dist/reveal.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,         // 允許網址導覽
+      slideNumber: true,  // 顯示投影片編號
+      plugins: []         // 無插件（這是純 HTML 範例）
+    });
+  </script>
+</body>
+</html>
